@@ -1,0 +1,36 @@
+<header class="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+  <div class="container mx-auto flex h-16 items-center justify-between px-4">
+    <a
+      class="text-lg font-semibold tracking-tight"
+      routerLink="/">
+      Alpha One
+    </a>
+    <nav class="flex items-center gap-6">
+      <a
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
+        routerLink="/home"
+        routerLinkActive="text-[var(--color-text)]">
+        Home
+      </a>
+      <a
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
+        routerLink="/dashboard"
+        routerLinkActive="text-[var(--color-text)]">
+        Dashboard
+      </a>
+      <a
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
+        routerLink="/profile"
+        routerLinkActive="text-[var(--color-text)]">
+        Profile
+      </a>
+      <a
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
+        routerLink="/controls"
+        routerLinkActive="text-[var(--color-text)]">
+        Controls
+      </a>
+      <app-theme-toggle />
+    </nav>
+  </div>
+</header>

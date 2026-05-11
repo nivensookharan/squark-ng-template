@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "b2-test: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "b2-test: serve",
+      "url": "http://localhost:4201/"
+    },
+    {
+      "name": "b3: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "b3: serve",
+      "url": "http://localhost:4205/"
+    },
+    {
+      "name": "b6-pro: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "b6-pro: serve",
+      "url": "http://localhost:4210/"
+    },
+    {
+      "name": "mon-1: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "mon-1: serve",
+      "url": "http://localhost:4201/"
+    },
+    {
+      "name": "alpha-one: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "alpha-one: serve",
+      "url": "http://localhost:4301/"
+    }
+  ]
+}

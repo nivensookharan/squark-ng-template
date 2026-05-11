@@ -1,0 +1,230 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "b2-test: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b2-test"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "b2-test: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/b2-test"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "b2-test: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b2-test"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "b3: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b3"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "b3: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/b3"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "b3: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b3"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "b6-pro: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b6-pro"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "b6-pro: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/b6-pro"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "b6-pro: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/b6-pro"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "mon-1: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/mon-1"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "mon-1: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/mon-1"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "mon-1: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/mon-1"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "alpha-one: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/alpha-one"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    },
+    {
+      "label": "alpha-one: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/alpha-one"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "alpha-one: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/alpha-one"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": { "regexp": "Changes detected" },
+          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+        }
+      }
+    }
+  ]
+}
