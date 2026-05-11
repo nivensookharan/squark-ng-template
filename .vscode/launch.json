@@ -35,6 +35,13 @@
       "request": "launch",
       "preLaunchTask": "alpha-one: serve",
       "url": "http://localhost:4301/"
+    },
+    {
+      "name": "beta-one: serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "beta-one: serve",
+      "url": "http://localhost:4302/"
     }
   ]
 }

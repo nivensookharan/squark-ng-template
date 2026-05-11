@@ -1,0 +1,33 @@
+<header class="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+  <div class="container mx-auto flex h-16 items-center justify-between gap-4 px-4">
+    <div class="space-y-0.5">
+      <a
+        routerLink="/"
+        class="text-lg font-semibold tracking-tight">
+        Beta One
+      </a>
+      <p class="text-sm text-[var(--color-text-muted)]">Beta testing of agent flow.</p>
+    </div>
+    <nav class="flex items-center gap-6">
+      <a
+        routerLink="/home"
+        routerLinkActive="text-[var(--color-text)]"
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]">
+        Home
+      </a>
+      <a
+        routerLink="/map"
+        routerLinkActive="text-[var(--color-text)]"
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]">
+        Map
+      </a>
+      <a
+        routerLink="/data"
+        routerLinkActive="text-[var(--color-text)]"
+        class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]">
+        Data
+      </a>
+      <app-theme-toggle />
+    </nav>
+  </div>
+</header>
