@@ -14,8 +14,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -41,8 +45,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -59,8 +67,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -86,8 +98,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -104,8 +120,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -131,8 +151,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -149,8 +173,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -176,8 +204,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -194,8 +226,12 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     },
@@ -221,8 +257,65 @@
         "pattern": "$tsc",
         "background": {
           "activeOnStart": true,
-          "beginsPattern": { "regexp": "Changes detected" },
-          "endsPattern": { "regexp": "bundle generation (complete|failed)" }
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
+        }
+      }
+    },
+    {
+      "label": "beta-one: serve",
+      "type": "shell",
+      "command": "ng serve",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/beta-one"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
+        }
+      }
+    },
+    {
+      "label": "beta-one: build",
+      "type": "shell",
+      "command": "ng build",
+      "options": {
+        "cwd": "${workspaceFolder}/beta-one"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "beta-one: test",
+      "type": "shell",
+      "command": "ng test",
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/beta-one"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "Changes detected"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation (complete|failed)"
+          }
         }
       }
     }

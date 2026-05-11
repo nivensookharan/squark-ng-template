@@ -1,1 +1,157 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss — global tokens + Tailwind v4 */
+@use 'tailwindcss';
+
+/* ---------- Light mode (default) ---------- */
+:root {
+  /* Surfaces & text */
+  --color-background: oklch(100% 0 0);
+  --color-foreground: oklch(14.5% 0.025 264);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-alt: oklch(96% 0 0);
+  --color-text: oklch(15% 0 0);
+  --color-text-muted: oklch(45% 0 0);
+  --color-border: oklch(88% 0 0);
+
+  /* Brand & intent */
+  --color-primary: oklch(55% 0.2 250);
+  --color-primary-foreground: oklch(98% 0 0);
+  --color-secondary: oklch(96% 0.01 264);
+  --color-secondary-foreground: oklch(14.5% 0.025 264);
+  --color-accent: oklch(96% 0.01 264);
+  --color-accent-foreground: oklch(14.5% 0.025 264);
+  --color-muted: oklch(96% 0.01 264);
+  --color-muted-foreground: oklch(46% 0.02 264);
+
+  /* Status */
+  --color-destructive: oklch(53% 0.22 27);
+  --color-destructive-foreground: oklch(98% 0.01 264);
+  --color-success: oklch(62% 0.18 145);
+  --color-success-foreground: oklch(98% 0 0);
+  --color-warning: oklch(75% 0.16 80);
+  --color-warning-foreground: oklch(20% 0.05 80);
+  --color-info: oklch(60% 0.15 230);
+  --color-info-foreground: oklch(98% 0 0);
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-base: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px 0 oklch(0% 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px oklch(0% 0 0 / 0.1), 0 2px 4px -2px oklch(0% 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px oklch(0% 0 0 / 0.1), 0 4px 6px -4px oklch(0% 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px oklch(0% 0 0 / 0.1), 0 8px 10px -6px oklch(0% 0 0 / 0.1);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  /* Z-index */
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-overlay: 1200;
+  --z-modal: 1300;
+  --z-popover: 1400;
+  --z-toast: 1500;
+}
+
+/* ---------- Dark mode (system preference, suppressible) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-background: oklch(14.5% 0.025 264);
+    --color-foreground: oklch(98% 0.01 264);
+    --color-surface: oklch(12% 0 0);
+    --color-surface-alt: oklch(18% 0 0);
+    --color-text: oklch(95% 0 0);
+    --color-text-muted: oklch(60% 0 0);
+    --color-border: oklch(28% 0 0);
+
+    --color-primary: oklch(65% 0.2 250);
+    --color-primary-foreground: oklch(10% 0 0);
+    --color-secondary: oklch(22% 0.02 264);
+    --color-secondary-foreground: oklch(98% 0.01 264);
+    --color-accent: oklch(22% 0.02 264);
+    --color-accent-foreground: oklch(98% 0.01 264);
+    --color-muted: oklch(22% 0.02 264);
+    --color-muted-foreground: oklch(65% 0.02 264);
+
+    --color-destructive: oklch(42% 0.15 27);
+    --color-destructive-foreground: oklch(98% 0.01 264);
+    --color-success: oklch(70% 0.18 145);
+    --color-success-foreground: oklch(10% 0 0);
+    --color-warning: oklch(78% 0.16 80);
+    --color-warning-foreground: oklch(15% 0.05 80);
+    --color-info: oklch(70% 0.15 230);
+    --color-info-foreground: oklch(10% 0 0);
+
+    --shadow-sm: 0 1px 2px 0 oklch(0% 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px oklch(0% 0 0 / 0.4), 0 2px 4px -2px oklch(0% 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px oklch(0% 0 0 / 0.5), 0 4px 6px -4px oklch(0% 0 0 / 0.5);
+    --shadow-xl: 0 20px 25px -5px oklch(0% 0 0 / 0.6), 0 8px 10px -6px oklch(0% 0 0 / 0.6);
+  }
+}
+
+/* ---------- Dark mode (explicit user override via ThemeService) ---------- */
+:root[data-theme='dark'] {
+  --color-background: oklch(14.5% 0.025 264);
+  --color-foreground: oklch(98% 0.01 264);
+  --color-surface: oklch(12% 0 0);
+  --color-surface-alt: oklch(18% 0 0);
+  --color-text: oklch(95% 0 0);
+  --color-text-muted: oklch(60% 0 0);
+  --color-border: oklch(28% 0 0);
+
+  --color-primary: oklch(65% 0.2 250);
+  --color-primary-foreground: oklch(10% 0 0);
+  --color-secondary: oklch(22% 0.02 264);
+  --color-secondary-foreground: oklch(98% 0.01 264);
+  --color-accent: oklch(22% 0.02 264);
+  --color-accent-foreground: oklch(98% 0.01 264);
+  --color-muted: oklch(22% 0.02 264);
+  --color-muted-foreground: oklch(65% 0.02 264);
+
+  --color-destructive: oklch(42% 0.15 27);
+  --color-destructive-foreground: oklch(98% 0.01 264);
+  --color-success: oklch(70% 0.18 145);
+  --color-success-foreground: oklch(10% 0 0);
+  --color-warning: oklch(78% 0.16 80);
+  --color-warning-foreground: oklch(15% 0.05 80);
+  --color-info: oklch(70% 0.15 230);
+  --color-info-foreground: oklch(10% 0 0);
+
+  --shadow-sm: 0 1px 2px 0 oklch(0% 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px oklch(0% 0 0 / 0.4), 0 2px 4px -2px oklch(0% 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px oklch(0% 0 0 / 0.5), 0 4px 6px -4px oklch(0% 0 0 / 0.5);
+  --shadow-xl: 0 20px 25px -5px oklch(0% 0 0 / 0.6), 0 8px 10px -6px oklch(0% 0 0 / 0.6);
+}
+
+/* ---------- Base element styles ---------- */
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+}

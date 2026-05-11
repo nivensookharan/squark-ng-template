@@ -23,6 +23,7 @@ The prompt will ask for: app name, federation role, port, remote name, feature r
 | App | Role | Port |
 |-----|------|------|
 | alpha-one | remote | 4301 |
+| beta-one | remote | 4302 |
 
 
 When adding a new app, pick the next available port and add a row to this table.
